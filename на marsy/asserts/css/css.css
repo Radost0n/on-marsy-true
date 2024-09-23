@@ -511,6 +511,7 @@ input[type='number']{
         top: 18px;
         left: 5px;
         right: 5px;
+        transition: background 0s 0.3s;
     }
     .menu__burger span:after,
     .menu__burger span::before{
@@ -520,6 +521,8 @@ input[type='number']{
         width: 100%;;
         background-color: #fff;
         content: '';
+        transition-duration: 0s, 0.3s;
+        transition-delay: 0.3s, 0s;
     }
     .menu__burger span:after{
         top: -10px;

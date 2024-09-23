@@ -9,12 +9,13 @@ $(document).ready(function() {
         $('nav a[href^="#"]').parent().removeClass('active');
         $(this).parent().addClass('active');
         $('.menu').toggle(500);
+        $('menu__burger').toggleClass('close');
         return false;
     });
     /*под мобилу*/
     $('menu__burger').click(function() {
         $('.menu').toggle(500);
-        $(this).addClass('close');
+        $(this).toggleClass('close');
     });
 });
 
