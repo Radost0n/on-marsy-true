@@ -8,11 +8,13 @@ $(document).ready(function() {
         }, 500);
         $('nav a[href^="#"]').parent().removeClass('active');
         $(this).parent().addClass('active');
+        $('.menu').toggle(500);
         return false;
     });
     /*под мобилу*/
     $('menu__burger').click(function() {
         $('.menu').toggle(500);
+        $(this).addClass('close');
     });
 });
 
