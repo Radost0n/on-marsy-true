@@ -433,4 +433,7 @@ input[type='number']{
         grid-gap: 30px;
         grid-template-columns: max-content;
     }
+    .team .block__title {
+        padding-top: 100px;
+    }
 }
