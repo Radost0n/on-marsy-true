@@ -427,6 +427,7 @@ input[type='number']{
     }
     .about {
         height: auto;
+        padding-bottom: 200px;
     }
     .about__inner{
         grid-gap: 30px;
