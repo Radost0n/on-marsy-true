@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /*Плавная прокрутка меню*/
     $('nav a[href^="#"]').click(function(event) {
         event.preventDefault();
         let target = $(this).attr('href');
@@ -8,6 +9,10 @@ $(document).ready(function() {
         $('nav a[href^="#"]').parent().removeClass('active');
         $(this).parent().addClass('active');
         return false;
+    });
+    /*под мобилу*/
+    $('menu__burger').click(function() {
+        $('.menu').toggle(500);
     });
 });
 
